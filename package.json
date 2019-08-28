@@ -9,22 +9,19 @@
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
+  "standard": {
+    "envs": {
+      "browser": true,
+      "jquery": true
+    }
+  },
   "browserslist": [
-    "> 1%",
+    "> 5%",
     "last 4 versions",
     "ie >= 10",
     "Firefox ESR",
     "Safari >= 10"
   ],
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "node": true,
-      "jasmine": true,
-      "jquery": true,
-      "es6": true
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/koterion/koterion"
@@ -33,15 +30,15 @@
   "license": "MIT",
   "homepage": "https://koterion.github.io/",
   "devDependencies": {
-    "autoprefixer": "^9.4.6",
-    "browser-sync": "^2.26.3",
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^5.2.0",
-    "laravel-mix": "^4.0.14",
-    "sass": "^1.16.1",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.5.22",
-    "sanitize.css": "^8.0.0",
-    "express": "^4.16.4"
+    "laravel-mix": "^4.1.2",
+    "sass": "^1.22.10",
+    "sass-loader": "^7.3.1",
+    "vue-template-compiler": "^2.6.10",
+    "sanitize.css": "^11.0.0",
+    "express": "^4.17.1"
   }
 }
