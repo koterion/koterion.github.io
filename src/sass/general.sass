@@ -1,0 +1,50 @@
+/*  ========================= Devices ========================= */
+
+$desktop: 1230px
+$laptop: 1150px
+$pad: 992px
+$padmini: 768px
+$mobile: 568px
+
+@import "~sanitize.css"
+
+// Шрифт по всему сайту будет уменьшаться
+// в зависимости от размера экрана
+
+html
+  font-size: 10px
+  @media (max-width: $desktop)
+    font-size: 9.5px
+
+  @media (max-width: $laptop)
+    font-size: 9px
+
+  @media (max-width: $pad)
+    font-size: 8.5px
+
+  @media (max-width: $padmini)
+    font-size: 8px
+
+  @media (max-width: $mobile)
+    font-size: 7.5px
+
+  @media (min-width: $pad)
+    *
+      -webkit-user-select: text
+      user-select: none
+
+body
+  background: #252024
+  font-size: 1.4rem
+  font-family: Montserrat, sans-serif
+
+  ul, li
+    padding: 0
+
+#app
+  max-width: 100%
+  min-width: 320px
+  overflow: hidden
+  min-height: 100vh
+  position: relative
+  padding: 4rem 2rem
